@@ -1,3 +1,78 @@
+Ajax Request Demo
+=================
+
+**index.html**
+``` html   
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Metiorites</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/reqwest.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section>
+        <h1>Them fall from space!</h1>
+        <ul class="metiorite-image-list"></ul>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+```   
+
+**css/style.css**
+``` css   
+* {
+  margin: 0px; 
+  padding: 0px;
+}
+
+body {
+  background-color: #ff7a7a;
+}
+
+main {
+  margin: 30px;
+}
+
+main section h1 {
+  margin-bottom: 30px;
+}
+
+main section ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px;
+}
+
+li {
+  background-color: #fff;
+  border: solid 1px black;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 3px;
+  list-style: none;
+  width: 200px;
+}
+
+li:hover {
+  background-color: rgba(101,237,237, 1);
+}
+
+main section h1, main section p {
+  text-align: center;
+}
+
+```   
+
+**js/app.js**
+``` javascript   
 'use strict';
 
 // api globals
@@ -89,3 +164,5 @@ getDataFromUrl(metioriteLandingUrl, options,  handleAjaxRequest);
 //}
 
 //getDataFromUrl(seattleCrime, options,  handleSetateRequest);
+```   
+
