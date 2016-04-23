@@ -1,5 +1,6 @@
 Ajax Request Demo
 =================
+[![Build Status](https://travis-ci.org/slugbyte/ajax-request-demo.svg?branch=master)](https://travis-ci.org/slugbyte/ajax-request-demo)  
 
 **index.html**
 ``` html   
